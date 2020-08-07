@@ -1,0 +1,10 @@
+# conf file must be in same directory as script
+[json]
+app_name = SonicwallCaptureClient EventLogs
+version = 1.0
+
+[sonicwall]
+email = 
+password = 
+url = https://captureclient.sonicwall.com/api
+state_dir = ./state
