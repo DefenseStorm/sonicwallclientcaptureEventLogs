@@ -83,7 +83,7 @@ class integration(object):
         for item in results:
             item['timestamp'] = item['messageTime']
             self.ds.writeJSONEvent(item)
-        self.get_managementConsoleLogs(since=last_run_str)
+        results = self.get_managementConsoleLogs(since=last_run_str)
         for item in results:
             item['timestamp'] = item['messageTime']
             self.ds.writeJSONEvent(item)
